@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # question-answer
 
 This README outlines the details of collaborating on this Ember application.
@@ -48,3 +49,7 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+=======
+# message-board
+This is a simple web app that enables a user to input questions and people can answer
+>>>>>>> 16fc38d387212bdbd30b4cd711a7819678ff3df6
