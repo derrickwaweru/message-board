@@ -1,0 +1,11 @@
+{{outlet}}
+<div class="jumbrotron">
+<h1>Question and answer message board</h1>
+<p>Do you think you are brave enough?Try these!</p>
+<ol>
+  {{#each model as |message|}}
+  <li>{{message.question}}<br>By {{message.author}}<br> Note:{{message.info}} </li>
+  {{/each}}
+</ol>
+
+</div>
