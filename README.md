@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+### Author Derrick Waweru
+------------------------------
+## Description
+This is a simple web app that enables a user to input a question and other people can answer and provide relative information on the said question
 # question-answer
 
 This README outlines the details of collaborating on this Ember application.
