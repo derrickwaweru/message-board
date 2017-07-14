@@ -4,8 +4,8 @@
 <p>Do you think you are brave enough?Try these!</p>
 <ol>
   {{#each model as |message|}}
-  <li>{{message.question}}<br>By {{message.author}}<br> Note:{{message.info}} </li>
+  {{message-tile message=message destroyMessage="destroyMessage"}}
   {{/each}}
 </ol>
-
+{{new-message saveMessage2="saveMessage3"}}
 </div>
