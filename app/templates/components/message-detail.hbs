@@ -1,0 +1,12 @@
+Posted{{message.question}}, by{{message.author}} AdditionalInfo{{message.info}}.
+<br>
+
+<h2> Answers </h2>
+<ul>
+  {{#each message.answer as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{new-answer saveAnswer="saveAnswer" answer=model}}
+  {{/each}}
+</ul>
+
+<button {{action 'delete' message}}>Delete</button>

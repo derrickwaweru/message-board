@@ -1,0 +1,24 @@
+{{#if updateMessageForm}}
+  <h4>Update {{message.question}}'s {{message.author}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=question id="question" placeholder=message.question}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=type id="author" placeholder=message.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="info">Info</label>
+        {{input value=info id="info" placeholder=message.info}}
+      </div>
+      <button {{action 'update' message}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateMessageForm'}}>Update</button>
+{{/if}}

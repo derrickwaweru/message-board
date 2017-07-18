@@ -1,4 +1,4 @@
 <li>
-  {{message.question}} <br>{{message.author}}
-<button {{action 'delete' message}}>Delete message</button>
+  {{#link-to 'message' message.id}}<br> {{message.author}}<br> {{message.info}}
+  {{/link-to}}
 </li>
