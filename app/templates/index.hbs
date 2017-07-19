@@ -1,22 +1,23 @@
 
 <div class="jumbrotron">
-
+<h3><marquee>Welcome to my message-board</marquee></h3>
 <h1>Question and answer message board</h1>
 <p>Do you think you are brave enough?Try these!</p>
 <ol>
+  <li>
   {{#each model.message as |message|}}
   {{message-tile message=message}}
   {{/each}}
+</li>
 </ol>
-</div>
+
 {{new-message saveMessage2="saveMessage3"}}
 
-<h2> All Answers </h2>
-
-<!-- <ol>
+<!-- <ol><li>
   {{#each model.answers as |answer|}}
-    <li>{{answer.question}} - {{answer.author}} - by {{answer.info}}</li>
-  {{/each}}
+    <li>Quest{{answer.question}} - by:{{answer.author}} - Additional Info {{answer.info}}</li>
+  {{/each}}</li>
 </ol> -->
 
 <hr>
+</div>

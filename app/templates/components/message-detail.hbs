@@ -1,11 +1,11 @@
-Posted{{message.question}}, by{{message.author}} AdditionalInfo{{message.info}}.
+<h5>{{message.question}} <br>by: {{message.author}}<br> Additional Info: {{message.info}}.</h5>
 <br>
 
 <h2> Answers </h2>
 <ul>
-  {{#each message.answer as |answer|}}
+  {{#each message.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-    {{new-answer saveAnswer="saveAnswer" answer=model}}
+    {{new-answer saveAnswer="saveAnswer" answer=model }}
   {{/each}}
 </ul>
 
