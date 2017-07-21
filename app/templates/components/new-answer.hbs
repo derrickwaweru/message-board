@@ -1,6 +1,7 @@
 {{#if addNewAnswer}}
 <h1> Answer</h1>
-  <div>
+  <div><ol>
+    <li>
     <form>
       <div class="form-group">
         <label for="answer">Answer</label>
@@ -12,6 +13,8 @@
       </div>
       <button {{action 'saveAnswer'}}>Save</button>
     </form>
+  </li>
+</ol>
   </div>
 {{else}}
   <button {{action 'answerFormShow'}}>New Answer</button>

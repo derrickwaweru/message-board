@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       })
       message.save();
-      this.transitionTo("index");
+      this.transitionTo("message");
     },
 
     saveAnswer(params) {
