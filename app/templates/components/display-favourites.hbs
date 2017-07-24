@@ -1,0 +1,7 @@
+
+<h2>Favorite Questions</h2>
+<ol>
+{{#each favouriteQuestions.messages as |message|}}
+    <li>{{#link-to 'message' message.id}} {{message.question}} <br> {{message.author}}{{/link-to}}</li>
+{{/each}}
+</ol>

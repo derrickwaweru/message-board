@@ -2,5 +2,6 @@
 <h2> {{model.answer}} {{model.author}}:</h2>
 {{update-message  message=model update="update"}}
 {{message-detail message=model destroyMessage="destroyMessage" destroyAnswer="destroyAnswer"}}
-{{new-answer saveAnswer="saveAnswer" message=model}}
+{{new-answer message-tile message=message saveAnswer="saveAnswer" message=model}}
+
 </div>
