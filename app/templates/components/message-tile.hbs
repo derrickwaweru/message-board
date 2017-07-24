@@ -1,5 +1,5 @@
   <ul><li>{{#link-to 'message' message.id}} <br> {{message.question}} <br> {{message.author}} <br> {{message.info}} <br>
     {{answerCount}}
   {{/link-to}}</li></ul>
-<button {{action 'addToQuestion' question}}>Add to List</button><br>
-<button {{action 'addToFavs' message}}>Favourite question</button>
+<button class="btn btn-success" {{action 'addToQuestion' question}}>Add to List</button><br>
+<button class="btn btn-danger" {{action 'addToFavs' message}}>Favourite question</button>
